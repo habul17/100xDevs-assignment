@@ -2,29 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
         .container {
-            width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 500px;
+
         }
 
         .left {
             background-color: red;
+            display: grid;
+            align-items: center;
         }
 
         .right {
             background-color: blue;
+            display: grid;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
+
     <div class="container">
         <div class="left">
             <h1>Left</h1>
@@ -33,6 +37,7 @@
             <h1>Right</h1>
         </div>
     </div>
+
 </body>
 
 </html>
